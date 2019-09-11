@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/canvas/canvas",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/hongBao/hongBao",
+    "pages/list/template/template",
+    "pages/list/tiXian/tiXian"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "oWong",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

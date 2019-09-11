@@ -1,0 +1,6 @@
+/* pages/list/template/template.wxss */
+view{
+  padding:100rpx 50rpx;
+  line-height:50rpx;
+  font-size:34rpx;
+}

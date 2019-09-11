@@ -1,0 +1,19 @@
+<view class="list-header">
+	<view class="header-tx">
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view>{{userInfo.nickName}}</view>
+	</view>
+	<view class="header-info">
+		<view class='money'><text>{{moneyData.money}}</text>元</view>
+    <view class='count'><text>{{moneyData.count}}</text>钻</view>
+	</view>
+</view>
+<view class='tixian' bindtap='goToTiXian'>提现</view>
+<view class='items'>
+  <block  wx:for="{{list}}">
+    <view class='item' bindtap='goToTemplate' data-value='{{item}}'>
+      <view class='item-text'><text>{{item.title}}</text></view>
+      <view class='item-img'><image src='/image/arrow.png'></image></view>
+    </view>
+  </block>
+</view>

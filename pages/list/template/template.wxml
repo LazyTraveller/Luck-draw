@@ -1,0 +1,4 @@
+<!--pages/list/template/template.wxml-->
+<view>
+  <text>{{text}}</text>
+</view>

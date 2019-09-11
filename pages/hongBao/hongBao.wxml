@@ -1,0 +1,15 @@
+<!--pages/hongBao/hongBao.wxml-->
+<view class='head'>
+  <view class='money'>{{hongbao}}<text>元</text></view>
+  <view class='account'>已存入账户</view>
+</view>
+<view class='imgList'>
+  <image src='{{src}}'></image>
+  <block wx:for="{{imgList}}" wx:key>
+    <view class='img-item'><image src='{{item}}'></image></view>
+  </block>
+</view>
+<view class='lingqu'>100000+人领取</view>
+<view class='banner' bindtap='goToMini'>
+  <view class='banner-img'><image src='/image/banner.png'></image></view>
+</view>

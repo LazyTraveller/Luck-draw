@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FB4747",
+    "usingComponents": {
+      "popup": "/components/dist/popup/index"
+    }
+}

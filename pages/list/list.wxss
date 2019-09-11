@@ -1,0 +1,60 @@
+page {
+  width: 100%;
+}
+.list-header{
+	display: flex;
+  padding: 110rpx 50rpx 40rpx 90rpx;
+}
+.header-tx{
+  font-size: 30rpx;
+}
+.userinfo-avatar {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+}
+.header-info{
+  width:100%;
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+.header-info text{
+  font-size: 50rpx;
+  margin-right: 10rpx;
+}
+.money{
+ text-align:end;
+
+}
+.count{
+  text-align:end;
+
+}
+.tixian{
+  text-align:center;
+  width:120rpx;
+  background-color:red;
+  color:#fff;
+  font-size:28rpx;
+  padding:10rpx 20rpx;
+  border-radius:100rpx;
+  margin-left: 580rpx;
+}
+.items{
+  padding: 40rpx 0 0 50rpx;
+  font-size: 30rpx;
+}
+.item{
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid rgb(244,244,244)
+}
+.item-text{
+  margin-right: 520rpx
+}
+
+.item-img image{
+  width: 30rpx;
+  height: 30rpx
+}

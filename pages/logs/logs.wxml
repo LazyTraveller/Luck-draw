@@ -1,0 +1,23 @@
+<view class='container' animation="{{rotate}}">
+  <view class='btn' bindtap='try'>抽奖
+    <view class='item1'>
+      <image class='image1' mode='aspectFit' src='../../image/金元宝+10.png'></image>
+    </view>
+    <view class='item2'>
+      <image class='image2' mode='aspectFit' src='../../image/金元宝+10.png'></image>
+    </view>
+    <view class='item3'>
+      <image class='image3' mode='aspectFit' src='../../image/icon.png'></image>
+    </view>
+    <view class='item4'>
+      <image class='image4' mode='aspectFit' src='../../image/金元宝+10.png'></image>
+    </view>
+    <!--
+<view class='item5'>
+ <image class='image5' mode='aspectFit' src='../../image/金元宝+10.png'></image>
+</view>
+<view class='item6'>
+ <image class='image6' mode='aspectFit' src='../../image/金元宝+10.png'></image>
+</view> -->
+  </view>
+</view>

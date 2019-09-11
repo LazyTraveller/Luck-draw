@@ -1,0 +1,87 @@
+
+
+<view  class="wrapper" >
+
+<swiper  indicator-dots="true" class="gundong">
+<view>
+ <swiper-item wx:for="{{bnrUrl}}" >
+ <view bindtap="daohang" id='{{index}}'>
+  <text class='title-video1'>{{item.textarea}}</text>
+  <image   src='{{item.images}}'  class='img' />
+  </view>
+ </swiper-item>
+</view>
+
+</swiper>
+  <view class="main" style='transform:scale({{scale}});margin:0 auto;'>
+
+    <view class="canvas-container" style='margin:0 auto;'>
+      <view animation="{{animationData}}" class="canvas-content" style='margin:0 auto;'>
+        <!-- <canvas style="width: 300px; height: 300px; margin:0 auto;" class="canvas-element" canvas-id="lotteryCanvas"></canvas> -->
+        <view class="canvas-line">
+          <view class="canvas-litem" wx:for="{{awardsList}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+        </view>
+         <view class="canvas-list">
+          <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+            <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">
+              <text class='canvas-item-text-inner {{scale===1.4?"btnfont":"normal"}}'> {{awards[index].name}}</text>
+              <image  style='  padding-top: 140rpx;margin:auto auto; display: flex; align-items: center;justify-content: center;  width: 50px;height: 50px;  transform: translate(-0%, -50%);' src='{{awards[index].images}}'></image>
+            </view>
+        
+          </view>
+        </view>  
+      </view>
+       <view  bindtap="{{turning?'':'getLottery'}}" class="{{scale===1.4?'btnfont':'normal'}} canvas-btn {{turning?disabled:able}} {{chanceRemain==0?disabled:able}}" >抽奖</view> 
+    </view>
+    
+    <!-- <view class="main-container">
+      <button style='' class="main-container-btn {{turning?disabled:able}}" bindtap="{{turning?'':'getLottery'}}">抽 奖</button>
+    </view> -->
+    
+  </view>
+  <view class='zhongjiang'>
+
+<text class='zhongjiang-text'>看看手气</text>
+<scroll-view scroll-y="true"  style="height: 100px;position:relative;">
+<view  wx:for="{{LotteryUser}}">
+<text style='margin-left:10px;font-size:24rpx;color:yellow;' class='wechatname'>{{item.wechat}}</text>
+<text  style='margin-left:10px;display:block;color:white;margin-top:5px;font-size:20rpx;'>{{item.time}}</text>
+<text  class="zhongjiang-wechat">{{item.lotteryname}}</text>
+</view>
+</scroll-view>
+  </view>
+  <view style='top:30px;position:relative'>
+<text class='text-rules'>抽奖规则：</text>
+<view wx:for="{{Rule}}" style='margin-left:20px;margin-right:20px;margin-bottom:10px;'>
+<text class='rules'>{{item.textarea}}</text>
+</view>
+</view> 
+</view>
+
+<popup show="{{ isShare }}" bindclose="togglePopup">
+  <view class='share'>
+    <view class='share-head'>邀请大家可获得钻石</view>
+    <view class='share-foot'>
+      <view class='share-foot-text'>好东西要分享给大家哦</view>
+      <button open-type='share' class='share-middle'>分享</button>
+    </view> 
+  </view>
+</popup>
+<popup show="{{ isHongbao }}" bindclose="togglePopup2">
+  <view class='share'>
+    <view class='share-head'>抽到随机红包</view>
+    <view class='share-foot'>
+      <view class='share-foot-text'></view>
+      <button bindtap='goToHongBao' class='share-middle'>開</button>
+    </view> 
+  </view>
+</popup>
+<popup show="{{ isMini }}" bindclose="togglePopup3">
+  <view class='share3'>
+    <view class='share-head3'></view>
+    <view class='share-foot'>
+      <view class='share-foot-text3'>休息一下，玩玩小程序吧</view>
+      <button bindtap='goToMini' class='share-middle'>玩</button>
+    </view> 
+  </view>
+</popup>

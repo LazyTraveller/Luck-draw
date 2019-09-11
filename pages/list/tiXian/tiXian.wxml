@@ -1,0 +1,14 @@
+<!--pages/list/tiXian/tiXian.wxml-->
+<view class="header-tx">
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view>{{userInfo.nickName}}</view>
+</view>
+<view class='info'>
+  <view class='yue'><text>账户余额： {{moneyData.money}}</text></view>
+  <view class='tixian'><text>提现余额</text></view>
+  <view class='input'>
+    ￥<input value='{{inputValue}}'></input>
+  </view>
+  <view class='quanbu'>提现到微信零钱， <text bindtap='tixianAll' class='active'>全部提现</text></view>
+</view>
+<view class='foot' bindtap='tixian'>提 现</view>
