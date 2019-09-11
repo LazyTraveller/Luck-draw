@@ -16,10 +16,4 @@
 4.字体不可用
 
 
-
-
-## License
-
-[MIT](./LICENSE) © 2016 [givebest](https://github.com/givebest)
-
  
